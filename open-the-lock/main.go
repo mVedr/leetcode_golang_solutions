@@ -57,7 +57,7 @@ func openLock(deadends []string, target string) int {
 }
 
 func main() {
-	testCases := []struct {
+	tc := []struct {
 		deadends []string
 		target   string
 	}{
@@ -66,7 +66,7 @@ func main() {
 		{[]string{"8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"}, "8888"},
 	}
 
-	for _, tc := range testCases {
+	for _, tc := range tc {
 		fmt.Println(openLock(tc.deadends, tc.target))
 	}
 }
