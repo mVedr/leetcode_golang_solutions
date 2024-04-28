@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 func main() {
@@ -11,7 +10,6 @@ func main() {
 	nums := make([]int, n)
 	var target int
 	fmt.Scan(&target)
-	sort.Ints(nums)
 	mpp := make(map[int]int)
 	for i := 0; i < n; i++ {
 		fmt.Scan(&nums[i])
